@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Automobile Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Our Automobile Website</h1>
+    </div>
+    <div class="content">
+        <h2>About Us</h2>
+        <p>We are a leading automobile dealership providing high-quality vehicles.</p>
+        <h2>Automobiles</h2>
+        <p>Check out our latest cars:</p>
+        <ul>
+            <li>Car 1 <img src="car1.jpg" alt="Car 1"></li>
+            <li>Car 2 <img src="car2.jpg" alt="Car 2"></li>
+            <!-- Add more cars here -->
+        </ul>
+        <h2>Vehicle Booking</h2>
+        <p>Book your favorite car now!</p>
+        <form action="/book" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="submit" value="Book Now">
+        </form>
+        <h2>Tour Appointment</h2>
+        <p>Schedule a tour appointment:</p>
+        <form action="/tour" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="tel" name="phone" placeholder="Your Phone">
+            <input type="date" name="date" required>
+            <input type="submit" value="Schedule Tour">
+        </form>
+    </div>
+    <div class="footer">
+        <p>Contact us: info@automobiles.com</p>
+    </div>
+</body>
+</html>
